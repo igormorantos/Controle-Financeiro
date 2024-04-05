@@ -16,6 +16,8 @@ namespace AppControleFinanceiro.Models
 
         public string Name { get; set; }
 
+        public double Value { get; set; }
+
         public DateTimeOffset Date { get; set; }
     }
 }
