@@ -6,4 +6,9 @@ public partial class TransactionEdit : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void TapGestuRecognizer_Tapped(object sender, TappedEventArgs e)
+    {
+        Navigation.PopModalAsync();
+    }
 }

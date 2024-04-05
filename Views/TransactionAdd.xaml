@@ -4,32 +4,38 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppControleFinanceiro.Views.TransactionAdd"
     Title="TransactionAdd">
- <VerticalStackLayout Spacing="10">
+    <VerticalStackLayout Spacing="10">
         <Border BackgroundColor="Black" Stroke="Transparent" Margin="15" Padding="15" StrokeShape="RoundRectangle 30">
-        <Grid RowDefinitions="Auto" ColumnDefinitions="*, 30">
-        <Label 
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*, 30">
+                <Label 
             Text="Novo"
             TextColor="White"
             HorizontalOptions="Center"
             Grid.Row="0"
             Grid.Column="0"/>
-        <Label Text="X" 
-               TextColor="White"
-               HorizontalOptions="Center"
-               Grid.Row="0"
-               Grid.Column="1"/>
-        
-    </Grid>
-    </Border>
+                <Image HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" Source="Close.png" WidthRequest="17">
+
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestuRecognizer_Tapped">
+
+                        </TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+
+                </Image>
+
+            </Grid>
+        </Border>
+
+        <Label x:Name="LabelError" Margin="30,0" IsVisible="False" TextColor="Red" />
 
         <Grid Margin="30,0" ColumnDefinitions="*,*">
-            <RadioButton IsChecked="True" Content="Receita" />
-            <RadioButton HorizontalOptions="End" Grid.Column="1" Content="Despesa" />
+            <RadioButton x:Name="RadioInCome" IsChecked="True" Content="Receita" />
+            <RadioButton x:Name="RadioExpense" HorizontalOptions="End" Grid.Column="1" Content="Despesa" />
         </Grid>
 
-        <Entry Placeholder="Nome" Margin="15, 0"/>
-        <DatePicker Margin="15, 0"/>
-        <Entry Placeholder="Valor" Margin="15, 0"/>
-        <Button Text="Salvar" Margin="15, 0" HorizontalOptions="Center" />
+        <Entry x:Name="EntryName" Placeholder="Nome" Margin="15, 0"/>
+        <DatePicker x:Name="DatePicker"  Margin="15, 0"/>
+        <Entry x:Name="EntryValue" Placeholder="Valor" Margin="15, 0"/>
+        <Button Text="Salvar" Margin="15, 0" HorizontalOptions="Center" Clicked="OnButtonClicked_Save"/>
     </VerticalStackLayout>
 </ContentPage>

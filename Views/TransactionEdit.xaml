@@ -7,7 +7,16 @@
         <Border BackgroundColor="Black" Stroke="Transparent" Margin="15" Padding="15" StrokeShape="RoundRectangle 30">
             <Grid RowDefinitions="Auto" ColumnDefinitions="*, 30">
                 <Label Text="Atualizar" TextColor="White" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0"/>
-                <Label Text="X" TextColor="White" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1"/>
+                <Image HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" Source="Close.png" WidthRequest="17">
+
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestuRecognizer_Tapped">
+
+                        </TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+
+                </Image>
+
             </Grid>
         </Border>
 
