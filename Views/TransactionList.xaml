@@ -8,15 +8,24 @@
         <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
     </ContentPage.Resources>
     <VerticalStackLayout>
-        <Grid Padding="15" ColumnDefinitions="50, *, Auto" >
-            <Label BackgroundColor="White" FontSize="20" HorizontalOptions="Center" Text="S" VerticalOptions="Center" />
-            <VerticalStackLayout Grid.Column="1">
-                <Label Text="Salário" />
-                <Label Text="10/10/2022" TextColor="#BABABA"/>
-            </VerticalStackLayout>
-            <Label Grid.Column="2"  Text="R$ 3.600,00" VerticalOptions="Center" TextColor="{StaticResource Tertiary}" />
-        </Grid>
+
+        <CollectionView x:Name="CollectionViewTransaction">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="15" ColumnDefinitions="50, *, Auto" >
+                        <Label BackgroundColor="White" FontSize="20" HorizontalOptions="Center" Text="S" VerticalOptions="Center" />
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="{Binding Name}" />
+                            <Label Text="{Binding Date, StringFormat='{0:dd/MM/yyyy}'}" TextColor="#BABABA"/>
+                        </VerticalStackLayout>
+                        <Label Grid.Column="2"  Text="{Binding Value, StringFormat='{0:C}'}" VerticalOptions="Center" TextColor="{StaticResource Tertiary}" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
         
+
         <Button Text="Edit" Clicked="OnButtonClickToTransactionEdit" HorizontalOptions="Center"/>
 
         <Border Margin="10" BackgroundColor="{StaticResource Black}" Stroke="Transparent" Padding="15" StrokeShape="RoundRectangle 30">
