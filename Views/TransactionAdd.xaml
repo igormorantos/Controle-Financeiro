@@ -16,7 +16,7 @@
                 <Image HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" Source="Close.png" WidthRequest="17">
 
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestuRecognizer_Tapped">
+                        <TapGestureRecognizer Tapped="TapGestuRecognizerTapped_ToClose">
 
                         </TapGestureRecognizer>
                     </Image.GestureRecognizers>
@@ -29,12 +29,12 @@
         <Label x:Name="LabelError" Margin="30,0" IsVisible="False" TextColor="Red" />
 
         <Grid Margin="30,0" ColumnDefinitions="*,*">
-            <RadioButton x:Name="RadioInCome" IsChecked="True" Content="Receita" />
-            <RadioButton x:Name="RadioExpense" HorizontalOptions="End" Grid.Column="1" Content="Despesa" />
+            <RadioButton x:Name="RadioInCome" IsChecked="True" Content="Receita" TextColor="Black"/>
+            <RadioButton x:Name="RadioExpense" HorizontalOptions="End" Grid.Column="1" Content="Despesa" TextColor="Black"/>
         </Grid>
 
         <Entry x:Name="EntryName" Placeholder="Nome" Margin="15, 0"/>
-        <DatePicker x:Name="DatePicker"  Margin="15, 0"/>
+        <DatePicker x:Name="DatePicker"  Margin="15, 0" TextColor="Black"/>
         <Entry x:Name="EntryValue" Placeholder="Valor" Margin="15, 0"/>
         <Button Text="Salvar" Margin="15, 0" HorizontalOptions="Center" Clicked="OnButtonClicked_Save"/>
     </VerticalStackLayout>
