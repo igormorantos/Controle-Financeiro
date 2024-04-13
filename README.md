@@ -12,13 +12,14 @@
 
 O objetivo deste projeto é desenvolver um aplicativo mobile de gestão financeira simples e intuitivo, que auxilie os usuários no controle de suas receitas e despesas. O aplicativo se concentrará em funcionalidades básicas de CRUD (Criar, Ler, Atualizar e Excluir), permitindo que os usuários registrem, visualizem e gerenciem suas transações financeiras de forma eficiente.
 
-### Tecnologias
+## Tecnologias
 <p display="inline-block">
   <img width="48" src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp-logo"/>
-  <img width="55" src="https://github.com/igormorantos/Controle-Financeiro/blob/main/Resources/Images/net-maui-logo2.png" alt="blazor-logo"/>
+  <img width="55" src="https://github.com/igormorantos/Controle-Financeiro/blob/main/Resources/Images/net-maui-logo2.png" alt="MAUI-logo"/>
+  <img width="100" src="https://repository-images.githubusercontent.com/23315232/3ff31f00-ad1f-11e9-87dd-4cf6a924c3cc" alt="MAUI-logo"/>
 </p>
 
-### Development Tools
+## Development Tools
 
 <p display="inline-block">
   <img width="48" src="https://static.wikia.nocookie.net/logopedia/images/e/ec/Microsoft_Visual_Studio_2022.svg" alt="vs-logo"/>
@@ -40,6 +41,7 @@ O objetivo deste projeto é desenvolver um aplicativo mobile de gestão financei
   <img src="https://github.com/igormorantos/Controle-Financeiro/assets/94862012/7f53482d-60c1-4789-9d7f-b7df4d1506b0" alt="Imagem 2" style="width: 33%;">
   <img src="https://github.com/igormorantos/Controle-Financeiro/assets/94862012/c65500f3-6a57-490e-ad1d-9079970901bd" alt="Imagem 2" style="width: 33%;">
 </div>
+
 
 
 ## Running
