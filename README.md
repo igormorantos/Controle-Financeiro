@@ -1,6 +1,15 @@
 <h1 align="center">App Controle Financeiro</h1>
 <p align="center"><i>Aplicativo para Controle Financeiro feito com MAUI no .NET Feito para Windows, Android e IOS.</i></p>
 
+<p align="center" display="inline-block">
+  <img src="https://img.shields.io/github/languages/top/Editora-Artigos/article-model" alt="top-language"/>
+  <img src="https://img.shields.io/github/languages/count/Editora-Artigos/article-model.svg" alt="number-of-languages"/>
+  <a href="https://www.codacy.com/gh/Editora-Artigos/article-model/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Editora-Artigos/article-model&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/a148a172d5b6471098a0f0166b08e542"/></a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Editora-Artigos/article-model.svg">
+  <a href="https://github.com/Editora-Artigos/article-model/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Editora-Artigos/article-model.svg">
+  </a>
+
 ## Sobre o Projeto
 
 O objetivo deste projeto é desenvolver um aplicativo mobile de gestão financeira simples e intuitivo, que auxilie os usuários no controle de suas receitas e despesas. O aplicativo se concentrará em funcionalidades básicas de CRUD (Criar, Ler, Atualizar e Excluir), permitindo que os usuários registrem, visualizem e gerenciem suas transações financeiras de forma eficiente.
@@ -26,6 +35,14 @@ O objetivo deste projeto é desenvolver um aplicativo mobile de gestão financei
 :heavy_check_mark: Edição de cadastros
 
 :heavy_check_mark: Deleção de cadastros
+
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/igormorantos/Controle-Financeiro/assets/94862012/e313ef34-df46-4953-9742-8634f88a8029" alt="Imagem 1" style="width: 33%;">
+  <img src="https://github.com/igormorantos/Controle-Financeiro/assets/94862012/7f53482d-60c1-4789-9d7f-b7df4d1506b0" alt="Imagem 2" style="width: 33%;">
+  <img src="https://github.com/igormorantos/Controle-Financeiro/assets/94862012/c65500f3-6a57-490e-ad1d-9079970901bd" alt="Imagem 2" style="width: 33%;">
+</div>
+
 
 ## Running
 dotnet run
