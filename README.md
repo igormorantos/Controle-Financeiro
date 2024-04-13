@@ -35,6 +35,7 @@ O objetivo deste projeto é desenvolver um aplicativo mobile de gestão financei
 
 :heavy_check_mark: Deleção de cadastros
 
+## Layout da Aplicação :dash:
 
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/igormorantos/Controle-Financeiro/assets/94862012/e313ef34-df46-4953-9742-8634f88a8029" alt="Imagem 1" style="width: 33%;">
@@ -44,6 +45,12 @@ O objetivo deste projeto é desenvolver um aplicativo mobile de gestão financei
 
 
 
-## Running
-dotnet run
+## Como rodar a aplicação :arrow_forward:
+
+No terminal, clone o projeto: 
+
+```
+git clone https://github.com/igormorantos/Controle-Financeiro.git
+```
+
              
